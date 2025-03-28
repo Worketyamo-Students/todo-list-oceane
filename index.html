@@ -4,44 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
-<body class="overflow-x-hidden">
-    <section class="relative ">
-        <img src="./assets/image/img.png" alt="" class="absolute w-full lg:h-[400px]">
-        <section class=" flex  flex-col    absolute gap-10 pt-60  w-full px-6  lg:w-full lg:justify-center  ">
+<body class="overflow-x-hidden bg" id="pagebody">
+    <section class="relative">
+        
+            <img src="./assets/image/Bitmap.jpg" alt="" class="w-full lg:h-[400px]  absolute">
+
+        
+        <section class=" flex  flex-col absolute   gap-10 pt  w-full px-6 lg:px-80  lg:w-full lg:justify-center  ">
             <div class=" flex justify-start gap-10 font-bold">
                 <h1 class="uppercase text-white">todo</h1>
+                <button type="submit"><img src="./assets/image/Combined Shape.svg" alt=""></button>
             </div>
-            <div class="bg-white px-6 py-3 rounded-xs">
-                <input type="text" name="" id="" placeholder="create a new todo ">
+            <div class="bg-white px-6 py-3 rounded-xs flex items-center gap-4 ">
+                <img src="./assets/image/Oval Copy.png" alt="">
+                <input type="text"  placeholder="create a new todo " class="w-full h-full focus:outline-white ">
             </div>
-            <div>
+            <div class="">
                 <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs">
                     <img src="./assets/image/Group 4.png" alt="">
-                    <input type="text" name="" id="" placeholder="Complete online JavaScript course " class="w-full">
+                    <input type="text" name="" id="" placeholder="Complete online JavaScript course " class="w-full focus:outline-white">
+                    <img src="./assets/image/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class="bg-white px-6 py-3 border-b border-gray-200 rounded-xs ">
-                    <input type="text" name="" id="" placeholder="create a new todo " class="w-full">
+                <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs">
+                    <img src="./assets/image/Oval Copy.png" alt="">
+                    <input type="text" name="" id="" placeholder="Jog around the park 3x" class="w-full focus:outline-white">
+                    <img src="./assets/image/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class="bg-white px-6 py-3 border-b border-gray-200 rounded-xs">
-                    <input type="text" name="" id="" placeholder="create a new todo " class="w-full">
+                <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs">
+                    <img src="./assets/image/Oval Copy.png" alt="">
+                    <input type="text" name="" id="" placeholder="10 minutes meditation " class="w-full focus:outline-white ">
+                    <img src="./assets/image/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class="bg-white px-6 py-3 border-b border-gray-200 rounded-xs">
-                    <input type="text" name="" id="" placeholder="create a new todo " class="w-full">
+                <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs">
+                    <img src="./assets/image/Oval Copy.png" alt="">
+                    <input type="text" name="" id="" placeholder="Read for 1 hour " class="w-full focus:outline-white">
+                    <img src="./assets/image/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class="bg-white px-6 py-3 border-b border-gray-200 rounded-xs">
-                    <input type="text" name="" id="" placeholder="create a new todo " class="w-full">
+                <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs">
+                    <img src="./assets/image/Oval Copy.png" alt="">
+                    <input type="text" name="" id="" placeholder="Pick up groceries " class="w-full">
+                    <img src="./assets/image/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class="bg-white px-6 py-3 border-b border-gray-200 rounded-xs">
-                    <input type="text" name="" id="" placeholder="create a new todo " class="w-full">
+                <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs">
+                    <img src="./assets/image/Oval Copy.png" alt="">
+                    <input type="text" name="" id="" placeholder="Complete Todo App on Frontend Mentor " class="w-full">
+                    <img src="./assets/image/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
-                <div class="bg-white px-6 py-3 border-b border-gray-200 rounded-xs">
-                    <input type="text" name="" id="" placeholder="create a new todo " class="w-full">
+                <div class="bg-white px-6 py-3 border-b border-gray-200 flex items-center w-full gap-4 rounded-xs justify-between capitalize">
+                    <h1> 5 items left</h1>
+                    <div class="bg-white px-6 py-3 rounded-xs flex items-center gap-4 flex justify-center capitalize lg:block lg:flex lg:gap-4" >
+                        <h1> all</h1>
+                        <h1>active</h1>
+                        <h1>completed</h1>
+        
+                    </div>
+        
+                    <h1>clear completed</h1>
                 </div>
-    
+            </div>
+            <div class="bg-white px-6 py-3 rounded-xs flex items-center gap-4 flex justify-center capitalize lg:hidden" >
+                <h1> all</h1>
+                <h1>active</h1>
+                <h1>completed</h1>
+
             </div>
         </section>
+        <div class="text-center relative pt-[900px] text ">Drag and drop to reorder list
+            <input type="text" placeholder="dsdddds">
+        </div>
+        
     </section>
 </body>
 </html>
